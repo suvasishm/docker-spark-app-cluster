@@ -17,13 +17,13 @@ $ docker-compose up
 
 ### submit application on standalone cluster
 
-$ docker run --rm -it gettyimages/spark bin/spark-submit --class BasicRDDLocal --master spark://172.168.5.26:6066 --deploy-mode cluster /app/deploy/spark-cluster-app-1.1.jar
+$ docker run --rm -it gettyimages/spark bin/spark-submit --class BasicRDDLocal --master spark://172.16.5.26:6066 --deploy-mode cluster /app/deploy/spark-cluster-app-1.1.jar
 
 ###### or
 
 $ docker exec -it  docker_master_1 /bin/bash
 
-$ bin/spark-submit --class BasicRDDLocal --master spark://172.168.5.26:6066 --deploy-mode cluster /app/deploy/spark-cluster-app-1.1.jar
+$ bin/spark-submit --class BasicRDDLocal --master spark://172.16.5.26:6066 --deploy-mode cluster /app/deploy/spark-cluster-app-1.1.jar
 
 ### check your app's webui
 http://localhost:8080
