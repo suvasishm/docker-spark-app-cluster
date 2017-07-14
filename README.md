@@ -26,4 +26,4 @@ $ docker exec -it <master-name> /bin/bash
 $ bin/spark-submit --class BasicRDDLocal --master spark://<<master-host ip>>:6066 --deploy-mode cluster /app/deploy/spark-cluster-app-1.1.jar
 
 ### check your app's webui
-http://172.168.5.26:8080
+http://localhost:8080
