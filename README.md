@@ -1,4 +1,8 @@
-This app is build on top of "gettyimages/spark" image, which provides standard Spark environment.
+This Spark app written on Java and meant to run on cluster - Spark Standalone Cluster at the moment.
+
+Main intention is to start the clusters on Docker containers. For that "gettyimages/spark" image has been used as base, which provides standard Spark environment running on a Linux platform.
+
+The docker-compose.yml has also been adopted from "gettyimages" and plan is to extend it further.
 
 The following steps demonstrate how to build and run the app on Spark Standalone Cluster.
 
